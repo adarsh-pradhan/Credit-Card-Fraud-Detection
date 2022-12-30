@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Credit Card Fraud Detection</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+<DIV align = "center"><br>
+<h1>Credit Card Fraud Detection</h1><br>
+  <p><i>Our machine learning model is designed to accurately detect<br> credit card fraud by analyzing a wide range of data points, <br>including transaction information, demographic data, and device information.</i></p>
+
+  <form action="/" method="POST">
+  <h2> Select an option to start the detection process.</h2>
+  <input type="radio">Manually input values<br>
+  <input type="radio">Upload a CSV file<br>
+
+
+  <form action="/action_page.php">
+    <input type="file" id="myFile" name="filename">
+    <input type="submit">
+  </form><br>
+
+  <h2> Enter details below:</h2>
+  <input type="text" name="trans_num" placeholder="Transaction Number" required="required"/><br><br>
+  <input type="text" name="first" placeholder="First Name" required="required" />
+  <input type="text" name="last" placeholder="Last Name" required="required" /><br>
+  <label for="start">Date of Birth:</label>
+  <input type="date" id="start" name="trip-start"
+         value="2000-01-01"
+         min="1900-01-01" max="2022-12-29"><br><br>
+
+  Category :
+  <select name="category" id="category">
+    <option value="gas_transport">Gas & transport</option>
+    <option value="grocery_pos">Grocery pos</option>
+    <option value="grocery_net">Grocery net</option>
+    <option value="home">Home</option>
+    <option value="shopping_pos">Shopping pos</option>
+    <option value="kids_pets">Kids & pets</option>
+    <option value="shopping_net">Shopping net</option>
+    <option value="entertainment">Entertainment</option>
+    <option value="food_dining">Food & dining</option>
+    <option value="personal_care">Personal care</option>
+    <option value="health_fitness">Health & fitness</option>
+    <option value="travel">Travel</option>
+    <option value="misc_pos">Misc pos</option>
+    <option value="misc_net">Misc net</option>
+  </select><br>
+
+  <label for="meeting-time">Transaction date & time :</label>
+  <input type="datetime-local" id="meeting-time"
+         name="meeting-time" value="2000-01-01T00:00"
+         min="1958-01-01T00:00" max="2023-01-01T00:00"><br><br>
+
+  <input type="text" name="amt" placeholder="Amount spent" required="required" /><br><br>
+  <input type="text" name="zip" placeholder="Zip Code" required="required" />
+  <input type="text" name="city_pop" placeholder="City's population" required="required" /><br>
+  <input type="text" name="lat" placeholder="User's Latitude" required="required" />
+  <input type="text" name="long" placeholder="User's Longitude" required="required" /><br>
+  <input type="text" name="merch_lat" placeholder="Merchant's Latitude" required="required" />
+  <input type="text" name="merch_long" placeholder="Merchant's Longitude" required="required" /><br><br>
+
+    <button type="submit">Submit</button><br><br>
+</form>
+  <footer>
+	<p style="color:blue;">Created by Algorithm Avengers &#169; 2022</p>
+</footer>
+</DIV>
+</body>
+</html>
